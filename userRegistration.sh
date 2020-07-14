@@ -41,9 +41,10 @@ fi
 
 read -p "Enter a password: " password
 
-if [[ ${#password} -ge 8 ]]
+if [[ ${#password} -ge 8 && "$password" =~ [[:upper:]]+ ]]
 then
         echo "Password Valid"
 else
         echo "Password Not Valid"
 fi
+
