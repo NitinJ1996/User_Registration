@@ -38,3 +38,12 @@ then
 else
         echo "Enter a valid number"
 fi
+
+read -p "Enter a password: " password
+
+if [[ ${#password} -ge 8 ]]
+then
+        echo "Password Valid"
+else
+        echo "Password Not Valid"
+fi
