@@ -29,3 +29,12 @@ then
 else
         echo "Enter a valid Email"
 fi
+
+read -p "Enter a Mobile number: " number
+
+if [[ $number =~ ^[0-9]{2}[[:space:]][1-9][0-9]{9}$ ]]
+then
+        echo "Number valid"
+else
+        echo "Enter a valid number"
+fi
