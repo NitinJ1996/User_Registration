@@ -41,7 +41,8 @@ fi
 
 read -p "Enter a password: " password
 
-if [[ ${#password} -ge 8 && "$password" =~ [[:upper:]]+ && "$password" =~ [[:digit:]]+ ]]
+special='^[A-Za-z0-9]*[@#$%&=_-][A-Za-z0-9]*$'
+if [[ ${#password} -ge 8 && "$password" =~ [[:upper:]]+ && "$password" =~ [[:digit:]]+ && $password =~ $special ]]
 then
         echo "Password Valid"
 else
