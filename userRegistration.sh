@@ -1,10 +1,10 @@
-#!/bin/bash -x
+#!/bin/bash 
 shopt -s extglob
 
 patternfname="^[[:upper:]]{1}[[:lower:]]{2,}$"
 patternlname="^[[:upper:]][[:lower:]]{2,}$"
 patternemail="^[a-zA-Z0-9]+([.+_-]{1}[a-zA-Z0-9]{3,}){0,2}\@[a-zA-z]+\.[a-z]{2,}([.]{1}[a-z]{2,}){0,2}$"
-patternmobile="^[0-9]{2}[[:space:]][1-9][0-9]{9}$"
+patternmobile=^[0-9]{2}[[:space:]][1-9][0-9]{9}$
 count=0
 
 function fname_validation(){
@@ -97,7 +97,7 @@ function password_validation(){
         	echo "Password Not Valid"
 	fi
 	done
-|
+}
 
 fname_validation
 lname_validation
