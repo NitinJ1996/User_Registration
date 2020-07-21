@@ -97,7 +97,7 @@ function password_validation(){
         	echo "Password Not Valid"
 	fi
 	done
-|
+}
 
 fname_validation
 lname_validation
