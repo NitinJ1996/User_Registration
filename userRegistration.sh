@@ -32,7 +32,7 @@ function lname_validation(){
 
 	read -p "Enter the last name: " lname
 
-	if [[ $lname =~ $patterlname ]]
+	if [[ $lname =~ $patternlname ]]
 	then
         	echo "LastName is valid"
 	valid=false
